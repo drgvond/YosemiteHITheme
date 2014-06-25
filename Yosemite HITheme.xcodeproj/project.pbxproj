@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		063B17C3195AF6D80074C3AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17C2195AF6D80074C3AA /* main.m */; };
+		063B17C6195AF6D80074C3AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17C5195AF6D80074C3AA /* AppDelegate.m */; };
+		063B17C8195AF6D80074C3AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063B17C7195AF6D80074C3AA /* Images.xcassets */; };
+		063B17CB195AF6D80074C3AA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063B17C9195AF6D80074C3AA /* MainMenu.xib */; };
+		063B17D7195AF6D80074C3AA /* Yosemite_HIThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17D6195AF6D80074C3AA /* Yosemite_HIThemeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		063B17D1195AF6D80074C3AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 063B17B5195AF6D80074C3AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 063B17BC195AF6D80074C3AA;
+			remoteInfo = "Yosemite HITheme";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063B17BD195AF6D80074C3AA /* Yosemite HITheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yosemite HITheme.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		063B17C1195AF6D80074C3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063B17C2195AF6D80074C3AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		063B17C4195AF6D80074C3AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		063B17C5195AF6D80074C3AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		063B17C7195AF6D80074C3AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		063B17CA195AF6D80074C3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		063B17D0195AF6D80074C3AA /* Yosemite HIThemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yosemite HIThemeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		063B17D5195AF6D80074C3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063B17D6195AF6D80074C3AA /* Yosemite_HIThemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Yosemite_HIThemeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		063B17BA195AF6D80074C3AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063B17CD195AF6D80074C3AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063B17B4195AF6D80074C3AA = {
+			isa = PBXGroup;
+			children = (
+				063B17BF195AF6D80074C3AA /* Yosemite HITheme */,
+				063B17D3195AF6D80074C3AA /* Yosemite HIThemeTests */,
+				063B17BE195AF6D80074C3AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		063B17BE195AF6D80074C3AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				063B17BD195AF6D80074C3AA /* Yosemite HITheme.app */,
+				063B17D0195AF6D80074C3AA /* Yosemite HIThemeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		063B17BF195AF6D80074C3AA /* Yosemite HITheme */ = {
+			isa = PBXGroup;
+			children = (
+				063B17C4195AF6D80074C3AA /* AppDelegate.h */,
+				063B17C5195AF6D80074C3AA /* AppDelegate.m */,
+				063B17C7195AF6D80074C3AA /* Images.xcassets */,
+				063B17C9195AF6D80074C3AA /* MainMenu.xib */,
+				063B17C0195AF6D80074C3AA /* Supporting Files */,
+			);
+			path = "Yosemite HITheme";
+			sourceTree = "<group>";
+		};
+		063B17C0195AF6D80074C3AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				063B17C1195AF6D80074C3AA /* Info.plist */,
+				063B17C2195AF6D80074C3AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		063B17D3195AF6D80074C3AA /* Yosemite HIThemeTests */ = {
+			isa = PBXGroup;
+			children = (
+				063B17D6195AF6D80074C3AA /* Yosemite_HIThemeTests.m */,
+				063B17D4195AF6D80074C3AA /* Supporting Files */,
+			);
+			path = "Yosemite HIThemeTests";
+			sourceTree = "<group>";
+		};
+		063B17D4195AF6D80074C3AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				063B17D5195AF6D80074C3AA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		063B17BC195AF6D80074C3AA /* Yosemite HITheme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063B17DA195AF6D80074C3AA /* Build configuration list for PBXNativeTarget "Yosemite HITheme" */;
+			buildPhases = (
+				063B17B9195AF6D80074C3AA /* Sources */,
+				063B17BA195AF6D80074C3AA /* Frameworks */,
+				063B17BB195AF6D80074C3AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yosemite HITheme";
+			productName = "Yosemite HITheme";
+			productReference = 063B17BD195AF6D80074C3AA /* Yosemite HITheme.app */;
+			productType = "com.apple.product-type.application";
+		};
+		063B17CF195AF6D80074C3AA /* Yosemite HIThemeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063B17DD195AF6D80074C3AA /* Build configuration list for PBXNativeTarget "Yosemite HIThemeTests" */;
+			buildPhases = (
+				063B17CC195AF6D80074C3AA /* Sources */,
+				063B17CD195AF6D80074C3AA /* Frameworks */,
+				063B17CE195AF6D80074C3AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				063B17D2195AF6D80074C3AA /* PBXTargetDependency */,
+			);
+			name = "Yosemite HIThemeTests";
+			productName = "Yosemite HIThemeTests";
+			productReference = 063B17D0195AF6D80074C3AA /* Yosemite HIThemeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		063B17B5195AF6D80074C3AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Digia Qt";
+				TargetAttributes = {
+					063B17BC195AF6D80074C3AA = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					063B17CF195AF6D80074C3AA = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 063B17BC195AF6D80074C3AA;
+					};
+				};
+			};
+			buildConfigurationList = 063B17B8195AF6D80074C3AA /* Build configuration list for PBXProject "Yosemite HITheme" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 063B17B4195AF6D80074C3AA;
+			productRefGroup = 063B17BE195AF6D80074C3AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				063B17BC195AF6D80074C3AA /* Yosemite HITheme */,
+				063B17CF195AF6D80074C3AA /* Yosemite HIThemeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		063B17BB195AF6D80074C3AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063B17C8195AF6D80074C3AA /* Images.xcassets in Resources */,
+				063B17CB195AF6D80074C3AA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063B17CE195AF6D80074C3AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		063B17B9195AF6D80074C3AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063B17C6195AF6D80074C3AA /* AppDelegate.m in Sources */,
+				063B17C3195AF6D80074C3AA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063B17CC195AF6D80074C3AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063B17D7195AF6D80074C3AA /* Yosemite_HIThemeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		063B17D2195AF6D80074C3AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 063B17BC195AF6D80074C3AA /* Yosemite HITheme */;
+			targetProxy = 063B17D1195AF6D80074C3AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		063B17C9195AF6D80074C3AA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063B17CA195AF6D80074C3AA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		063B17D8195AF6D80074C3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		063B17D9195AF6D80074C3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		063B17DB195AF6D80074C3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Yosemite HITheme/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		063B17DC195AF6D80074C3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Yosemite HITheme/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		063B17DE195AF6D80074C3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Yosemite HITheme.app/Contents/MacOS/Yosemite HITheme";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Yosemite HIThemeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		063B17DF195AF6D80074C3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Yosemite HITheme.app/Contents/MacOS/Yosemite HITheme";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Yosemite HIThemeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		063B17B8195AF6D80074C3AA /* Build configuration list for PBXProject "Yosemite HITheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063B17D8195AF6D80074C3AA /* Debug */,
+				063B17D9195AF6D80074C3AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		063B17DA195AF6D80074C3AA /* Build configuration list for PBXNativeTarget "Yosemite HITheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063B17DB195AF6D80074C3AA /* Debug */,
+				063B17DC195AF6D80074C3AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		063B17DD195AF6D80074C3AA /* Build configuration list for PBXNativeTarget "Yosemite HIThemeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063B17DE195AF6D80074C3AA /* Debug */,
+				063B17DF195AF6D80074C3AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 063B17B5195AF6D80074C3AA /* Project object */;
+}
