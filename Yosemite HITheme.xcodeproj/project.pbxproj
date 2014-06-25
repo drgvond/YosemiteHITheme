@@ -12,6 +12,10 @@
 		063B17C8195AF6D80074C3AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063B17C7195AF6D80074C3AA /* Images.xcassets */; };
 		063B17CB195AF6D80074C3AA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063B17C9195AF6D80074C3AA /* MainMenu.xib */; };
 		063B17D7195AF6D80074C3AA /* Yosemite_HIThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17D6195AF6D80074C3AA /* Yosemite_HIThemeTests.m */; };
+		063B17E4195AFA990074C3AA /* HIThemeFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17E3195AFA990074C3AA /* HIThemeFrameView.m */; };
+		063B17E6195AFD4B0074C3AA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063B17E5195AFD4B0074C3AA /* Carbon.framework */; };
+		063B17E9195B03230074C3AA /* HIThemeSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17E8195B03230074C3AA /* HIThemeSliderView.m */; };
+		063B17EC195B16D60074C3AA /* HIThemeFocusRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17EB195B16D60074C3AA /* HIThemeFocusRectView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,13 @@
 		063B17D0195AF6D80074C3AA /* Yosemite HIThemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yosemite HIThemeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		063B17D5195AF6D80074C3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		063B17D6195AF6D80074C3AA /* Yosemite_HIThemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Yosemite_HIThemeTests.m; sourceTree = "<group>"; };
+		063B17E2195AFA990074C3AA /* HIThemeFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIThemeFrameView.h; sourceTree = "<group>"; };
+		063B17E3195AFA990074C3AA /* HIThemeFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIThemeFrameView.m; sourceTree = "<group>"; };
+		063B17E5195AFD4B0074C3AA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		063B17E7195B03230074C3AA /* HIThemeSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIThemeSliderView.h; sourceTree = "<group>"; };
+		063B17E8195B03230074C3AA /* HIThemeSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIThemeSliderView.m; sourceTree = "<group>"; };
+		063B17EA195B16D60074C3AA /* HIThemeFocusRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIThemeFocusRectView.h; sourceTree = "<group>"; };
+		063B17EB195B16D60074C3AA /* HIThemeFocusRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIThemeFocusRectView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063B17E6195AFD4B0074C3AA /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +70,7 @@
 		063B17B4195AF6D80074C3AA = {
 			isa = PBXGroup;
 			children = (
+				063B17E5195AFD4B0074C3AA /* Carbon.framework */,
 				063B17BF195AF6D80074C3AA /* Yosemite HITheme */,
 				063B17D3195AF6D80074C3AA /* Yosemite HIThemeTests */,
 				063B17BE195AF6D80074C3AA /* Products */,
@@ -81,6 +94,12 @@
 				063B17C7195AF6D80074C3AA /* Images.xcassets */,
 				063B17C9195AF6D80074C3AA /* MainMenu.xib */,
 				063B17C0195AF6D80074C3AA /* Supporting Files */,
+				063B17E2195AFA990074C3AA /* HIThemeFrameView.h */,
+				063B17E3195AFA990074C3AA /* HIThemeFrameView.m */,
+				063B17E7195B03230074C3AA /* HIThemeSliderView.h */,
+				063B17E8195B03230074C3AA /* HIThemeSliderView.m */,
+				063B17EA195B16D60074C3AA /* HIThemeFocusRectView.h */,
+				063B17EB195B16D60074C3AA /* HIThemeFocusRectView.m */,
 			);
 			path = "Yosemite HITheme";
 			sourceTree = "<group>";
@@ -210,8 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063B17E9195B03230074C3AA /* HIThemeSliderView.m in Sources */,
+				063B17EC195B16D60074C3AA /* HIThemeFocusRectView.m in Sources */,
 				063B17C6195AF6D80074C3AA /* AppDelegate.m in Sources */,
 				063B17C3195AF6D80074C3AA /* main.m in Sources */,
+				063B17E4195AFA990074C3AA /* HIThemeFrameView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +348,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+				);
 				INFOPLIST_FILE = "Yosemite HITheme/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,6 +363,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+				);
 				INFOPLIST_FILE = "Yosemite HITheme/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
