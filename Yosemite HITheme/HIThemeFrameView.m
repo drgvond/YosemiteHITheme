@@ -25,7 +25,7 @@
     [super drawRect:dirtyRect];
     
     static void *data = 0;
-    long dataSize = 3 * self.frame.size.width * self.frame.size.height;
+    long dataSize = 4 * self.frame.size.width * self.frame.size.height;
     data = realloc(data, dataSize);
     memset(data, 0, dataSize);
     CGColorSpaceRef cs = CGColorSpaceCreateDeviceRGB();
@@ -33,30 +33,33 @@
                                             8, 4 * self.frame.size.width,
                                             cs, kCGImageAlphaPremultipliedFirst | kCGBitmapByteOrder32Host);
 
+    CGContextTranslateCTM(gc, 0, self.bounds.size.height);
+    CGContextScaleCTM(gc, 1, -1);
+
     const CGFloat bgColor[] = { 0.93, 0.93, 0.93 };
     CGContextSetFillColor(gc, bgColor);
     CGContextFillRect(gc, self.bounds);
     
-//    NSColor *innerColor = [NSColor textBackgroundColor];
-//    CGContextSetFillColorWithColor(gc, [innerColor CGColor]);
+    NSColor *innerColor = [NSColor textBackgroundColor];
+    CGContextSetFillColorWithColor(gc, [innerColor CGColor]);
 //    NSLog(@"%@", [NSColor textBackgroundColor]);
-    const CGFloat innerColor[] = { 1.0, 1.0, 1.0 };
-    CGContextSetFillColor(gc, innerColor);
-    CGContextFillRect(gc, CGRectInset(self.bounds, 2, 2));
-    
+//    const CGFloat innerColor[] = { 1.0, 1.0, 1.0 };
+//    CGContextSetFillColor(gc, innerColor);
+    CGContextFillRect(gc, CGRectInset(self.bounds, 1, 1));
+
     HIRect rect = CGRectInset(self.bounds, 1, 1);
     HIThemeFrameDrawInfo fdi;
     fdi.version = 0;
     fdi.state = kThemeStateActive;
     fdi.kind = kHIThemeFrameTextFieldSquare;
-    fdi.isFocused = YES;
+    fdi.isFocused = NO;
 
     HIThemeDrawFrame(&rect, &fdi, gc, kHIThemeOrientationNormal);
     
     CGContextRef dgc = [[NSGraphicsContext currentContext] graphicsPort];
     CGImageRef img = CGBitmapContextCreateImage(gc);
     CGContextDrawImage(dgc, rect, img);
-//    CGImageRelease(img);
+    CGImageRelease(img);
     CGContextRelease(gc);
 }
 

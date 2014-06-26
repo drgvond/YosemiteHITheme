@@ -30,7 +30,10 @@
     CGContextRef gc = CGBitmapContextCreate(NULL, self.frame.size.width, self.frame.size.height,
                                             8, 4 * self.frame.size.width,
                                             cs, kCGImageAlphaPremultipliedFirst | kCGBitmapByteOrder32Host);
-    
+
+    CGContextTranslateCTM(gc, 0, self.bounds.size.height);
+    CGContextScaleCTM(gc, 1, -1);
+
     NSColor *bgColor = [NSColor windowBackgroundColor];
     CGContextSetFillColorWithColor(gc, [bgColor CGColor]);
     CGContextFillRect(gc, self.bounds);
