@@ -45,7 +45,7 @@
     tdi.trackInfo.slider.thumbDir = kThemeThumbPlain;
     tdi.trackInfo.slider.pressState = 0;
 
-    HIThemeDrawTrack(&tdi, &rect, gc, kHIThemeOrientationNormal);
+    HIThemeDrawTrack(&tdi, NULL, gc, kHIThemeOrientationNormal);
     CGContextFlush(gc);
 
     [self drawBitmapContext:gc inRect:rect];
