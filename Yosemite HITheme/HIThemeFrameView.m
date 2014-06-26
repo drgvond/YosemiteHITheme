@@ -26,13 +26,14 @@
     
     CGContextRef gc = [self setupBitmapContext];
 
-    const CGFloat bgColor[] = { 0.93, 0.93, 0.93 };
-    CGContextSetFillColor(gc, bgColor);
+    NSColor *bgColor = [NSColor windowBackgroundColor];
+    CGContextSetFillColorWithColor(gc, [bgColor CGColor]);
+//    const CGFloat bgColor[] = { 0.93, 0.93, 0.93 };
+//    CGContextSetFillColor(gc, bgColor);
     CGContextFillRect(gc, self.bounds);
     
     NSColor *innerColor = [NSColor textBackgroundColor];
     CGContextSetFillColorWithColor(gc, [innerColor CGColor]);
-//    NSLog(@"%@", [NSColor textBackgroundColor]);
 //    const CGFloat innerColor[] = { 1.0, 1.0, 1.0 };
 //    CGContextSetFillColor(gc, innerColor);
     CGContextFillRect(gc, CGRectInset(self.bounds, 1, 1));
