@@ -24,17 +24,7 @@
 {
     [super drawRect:dirtyRect];
     
-    static void *data = 0;
-    long dataSize = 4 * self.frame.size.width * self.frame.size.height;
-    data = realloc(data, dataSize);
-    memset(data, 0, dataSize);
-    CGColorSpaceRef cs = CGColorSpaceCreateDeviceRGB();
-    CGContextRef gc = CGBitmapContextCreate(data, self.frame.size.width, self.frame.size.height,
-                                            8, 4 * self.frame.size.width,
-                                            cs, kCGImageAlphaPremultipliedFirst | kCGBitmapByteOrder32Host);
-
-    CGContextTranslateCTM(gc, 0, self.bounds.size.height);
-    CGContextScaleCTM(gc, 1, -1);
+    CGContextRef gc = [self setupBitmapContext];
 
     const CGFloat bgColor[] = { 0.93, 0.93, 0.93 };
     CGContextSetFillColor(gc, bgColor);
@@ -56,11 +46,7 @@
 
     HIThemeDrawFrame(&rect, &fdi, gc, kHIThemeOrientationNormal);
     
-    CGContextRef dgc = [[NSGraphicsContext currentContext] graphicsPort];
-    CGImageRef img = CGBitmapContextCreateImage(gc);
-    CGContextDrawImage(dgc, rect, img);
-    CGImageRelease(img);
-    CGContextRelease(gc);
+    [self drawBitmapContext:gc inRect:self.bounds];
 }
 
 @end

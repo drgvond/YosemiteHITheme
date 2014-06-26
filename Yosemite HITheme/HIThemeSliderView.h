@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "BackingStoredView.h"
 
-@interface HIThemeSliderView : NSView
+@interface HIThemeSliderView : BackingStoredView
 
 @end

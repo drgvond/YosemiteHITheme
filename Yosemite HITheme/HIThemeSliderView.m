@@ -23,17 +23,8 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
     [super drawRect:dirtyRect];
-    
-    static void *data = 0;
-    data = realloc(data, 4 * 4 * self.frame.size.width * self.frame.size.height);
-    CGColorSpaceRef cs = CGColorSpaceCreateDeviceRGB();
-    CGContextRef gc = CGBitmapContextCreate(NULL, 2 * self.frame.size.width, 2 * self.frame.size.height,
-                                            8, 4 * 2 * self.frame.size.width,
-                                            cs, kCGImageAlphaPremultipliedFirst | kCGBitmapByteOrder32Host);
 
-    CGContextTranslateCTM(gc, 0, 2 * self.bounds.s Yize.height);
-    CGContextScaleCTM(gc, 2, 2);
-    CGContextScaleCTM(gc, 1, -1);
+    CGContextRef gc = [self setupBitmapContext];
 
     NSColor *bgColor = [NSColor windowBackgroundColor];
     CGContextSetFillColorWithColor(gc, [bgColor CGColor]);
@@ -56,15 +47,8 @@
 
     HIThemeDrawTrack(&tdi, &rect, gc, kHIThemeOrientationNormal);
     CGContextFlush(gc);
-    
-    CGContextRef dgc = [[NSGraphicsContext currentContext] graphicsPort];
-    CGContextSaveGState(dgc);
-    CGContextScaleCTM(gc, 0.5, 0.5);
-    CGImageRef img = CGBitmapContextCreateImage(gc);
-    CGContextDrawImage(dgc, rect, img);
-//    CGImageRelease(img);
-    CGContextRestoreGState(dgc);
-    CGContextRelease(gc);
+
+    [self drawBitmapContext:gc inRect:rect];
 }
 
 @end

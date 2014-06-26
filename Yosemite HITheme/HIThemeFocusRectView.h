@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "BackingStoredView.h"
 
-@interface HIThemeFocusRectView : NSView
+@interface HIThemeFocusRectView : BackingStoredView
 
 @end

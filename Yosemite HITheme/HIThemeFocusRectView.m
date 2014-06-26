@@ -25,10 +25,11 @@
 {
     [super drawRect:dirtyRect];
     
-    CGContextRef cg = [[NSGraphicsContext currentContext] graphicsPort];
-    HIRect rect = CGRectInset(self.bounds, 6, 6);
+    CGContextRef gc = [self setupBitmapContext];
+    HIRect rect = CGRectInset(self.bounds, 5, 5);
 
-    HIThemeDrawFocusRect(&rect, true, cg, kHIThemeOrientationNormal);
+    HIThemeDrawFocusRect(&rect, true, gc, kHIThemeOrientationNormal);
+    [self drawBitmapContext:gc inRect:self.bounds];
 }
 
 @end
