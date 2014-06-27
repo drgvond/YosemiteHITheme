@@ -24,7 +24,10 @@
 {
     [super drawRect:dirtyRect];
 
-    CGContextRef gc = [self setupBitmapContext];
+    CGContextRef gc = [[NSGraphicsContext currentContext] graphicsPort];
+    CGContextSaveGState(gc);
+    CGContextScaleCTM(gc, 1, -1);
+    CGContextTranslateCTM(gc, 0, -self.bounds.size.height);
 
     NSColor *bgColor = [NSColor windowBackgroundColor];
     CGContextSetFillColorWithColor(gc, [bgColor CGColor]);
@@ -44,11 +47,10 @@
     tdi.enableState = kThemeTrackActive;
     tdi.trackInfo.slider.thumbDir = kThemeThumbPlain;
     tdi.trackInfo.slider.pressState = 0;
-
     HIThemeDrawTrack(&tdi, NULL, gc, kHIThemeOrientationNormal);
-    CGContextFlush(gc);
 
-    [self drawBitmapContext:gc inRect:rect];
+    CGContextFlush(gc);
+    CGContextRestoreGState(gc);
 }
 
 @end
