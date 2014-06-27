@@ -15,6 +15,7 @@
 		063B17E9195B03230074C3AA /* HIThemeSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17E8195B03230074C3AA /* HIThemeSliderView.m */; };
 		063B17EC195B16D60074C3AA /* HIThemeFocusRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063B17EB195B16D60074C3AA /* HIThemeFocusRectView.m */; };
 		06BB24DB195C62F8001F3FC1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BB24DA195C62F8001F3FC1 /* MainMenu.xib */; };
+		3ECE26BF195D9F1E009CDF42 /* HIThemeFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE26BE195D9F1E009CDF42 /* HIThemeFrameView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		063B17EA195B16D60074C3AA /* HIThemeFocusRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIThemeFocusRectView.h; sourceTree = "<group>"; };
 		063B17EB195B16D60074C3AA /* HIThemeFocusRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIThemeFocusRectView.m; sourceTree = "<group>"; };
 		06BB24DA195C62F8001F3FC1 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		3ECE26BD195D9F1E009CDF42 /* HIThemeFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIThemeFrameView.h; sourceTree = "<group>"; };
+		3ECE26BE195D9F1E009CDF42 /* HIThemeFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIThemeFrameView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 		063B17BF195AF6D80074C3AA /* Yosemite HITheme */ = {
 			isa = PBXGroup;
 			children = (
+				3ECE26BD195D9F1E009CDF42 /* HIThemeFrameView.h */,
+				3ECE26BE195D9F1E009CDF42 /* HIThemeFrameView.m */,
 				063B17C4195AF6D80074C3AA /* AppDelegate.h */,
 				063B17C5195AF6D80074C3AA /* AppDelegate.m */,
 				063B17C7195AF6D80074C3AA /* Images.xcassets */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				063B17E9195B03230074C3AA /* HIThemeSliderView.m in Sources */,
+				3ECE26BF195D9F1E009CDF42 /* HIThemeFrameView.m in Sources */,
 				063B17EC195B16D60074C3AA /* HIThemeFocusRectView.m in Sources */,
 				063B17C6195AF6D80074C3AA /* AppDelegate.m in Sources */,
 				063B17C3195AF6D80074C3AA /* main.m in Sources */,
