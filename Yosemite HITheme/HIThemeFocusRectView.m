@@ -25,11 +25,16 @@
 {
     [super drawRect:dirtyRect];
     
-    CGContextRef gc = [self setupBitmapContext];
-    HIRect rect = CGRectInset(self.bounds, 5, 5);
+    CGContextRef gc = [[NSGraphicsContext currentContext] graphicsPort];
+    CGContextSaveGState(gc);
+    CGContextScaleCTM(gc, 1, -1);
+    CGContextTranslateCTM(gc, 0, -self.bounds.size.height);
 
+    HIRect rect = CGRectInset(self.bounds, 5, 5);
     HIThemeDrawFocusRect(&rect, true, gc, kHIThemeOrientationNormal);
-    [self drawBitmapContext:gc inRect:self.bounds];
+
+    CGContextFlush(gc);
+    CGContextRestoreGState(gc);
 }
 
 @end
